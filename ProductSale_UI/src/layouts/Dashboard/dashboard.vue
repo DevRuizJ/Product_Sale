@@ -17,8 +17,23 @@
         <q-card v-for="product in filteredProducts" :key="product.id" class="product-card">
           <q-img :src="product.image" :alt="product.name" class="q-mb-sm" />
           <q-card-section>
-            <q-card-title>{{ product.name }}</q-card-title>
-            <q-card-text class="text-grey">{{ product.price }}</q-card-text>
+            <q-card-text class="text-grey"></q-card-text>
+          </q-card-section>
+          <q-card-section>
+            <div class="row no-wrap items-center">
+              <div class="col text-h6 ellipsis">
+                {{ product.name }}
+              </div>
+            </div>
+          </q-card-section>
+
+          <q-card-section class="q-pt-none">
+            <div class="text-subtitle1">
+              S/.{{ product.price }}
+            </div>
+            <div class="text-caption text-grey">
+              Small plates, salads & sandwiches in an intimate setting.
+            </div>
           </q-card-section>
         </q-card>
       </q-card-section>
