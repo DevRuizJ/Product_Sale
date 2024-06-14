@@ -34,7 +34,8 @@ import { defineComponent, ref } from 'vue'
 
 export default defineComponent({
   name: 'regis_ter',
-  setup () {
+  // eslint-disable-next-line space-before-function-paren
+  setup() {
     const username = ref<string>('')
     const email = ref<string>('')
     const password = ref<string>('')
@@ -49,7 +50,7 @@ export default defineComponent({
       console.log('Username:', username.value)
       console.log('Email:', email.value)
       console.log('Password:', password.value)
-      // Aquí puedes añadir la lógica para manejar el registro de usuario
+      // Aquí puedo añadir la lógica para manejar el registro de usuario
     }
 
     return {
@@ -70,7 +71,8 @@ export default defineComponent({
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url('/path-to-your-background-image.jpg'); /* Cambia esta ruta a la de tu imagen */
+  background-image: url('/path-to-your-background-image.jpg');
+  /* Cambiar la imagen */
   background-size: cover;
   background-position: center;
 }

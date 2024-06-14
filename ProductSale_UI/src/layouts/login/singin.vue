@@ -27,7 +27,8 @@ import { useRouter } from 'vue-router'
 
 export default defineComponent({
   name: 'log_in',
-  setup () {
+  // eslint-disable-next-line space-before-function-paren
+  setup() {
     const router = useRouter()
     const username = ref<string>('')
     const password = ref<string>('')
@@ -35,9 +36,9 @@ export default defineComponent({
     const submitForm = () => {
       console.log('Username:', username.value)
       console.log('Password:', password.value)
-      // Aquí puedes añadir la lógica para manejar el inicio de sesión
-      // Si la autenticación es exitosa, redirige al usuario a la página deseada
-      router.push('/dashboard') // Cambia '/dashboard' por la ruta a la que quieras redirigir
+      // Aquí puedo añadir la lógica para manejar el inicio de sesión
+      // Si la autenticación es exitosa, redirijo al usuario a la página deseada
+      router.push('/dashboard') // Cambia '/dashboard' por la ruta a la que quiero redirigir
     }
 
     return {
@@ -56,7 +57,8 @@ export default defineComponent({
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url('/path-to-your-background-image.jpg'); /* Cambia esta ruta a la de tu imagen */
+  background-image: url('/path-to-your-background-image.jpg');
+  /* Cambia esta ruta a la de tu imagen */
   background-size: cover;
   background-position: center;
 }

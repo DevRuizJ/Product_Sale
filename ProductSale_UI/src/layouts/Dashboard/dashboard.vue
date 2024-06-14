@@ -20,6 +20,7 @@
             <q-card-text class="text-grey"></q-card-text>
           </q-card-section>
           <q-card-section>
+            <div class="text-overline text-orange-9">Disponible</div>
             <div class="row no-wrap items-center">
               <div class="col text-h6 ellipsis">
                 {{ product.name }}
@@ -35,6 +36,9 @@
               Small plates, salads & sandwiches in an intimate setting.
             </div>
           </q-card-section>
+          <q-card-actions>
+            <q-btn flat color="primary" label="COMPRAR" />
+          </q-card-actions>
         </q-card>
       </q-card-section>
     </div>
@@ -72,7 +76,7 @@ export default defineComponent({
       { label: 'Electrónica', value: 'electronics' },
       { label: 'Ropa', value: 'clothing' },
       { label: 'Hogar', value: 'home' }
-      // Añadir más opciones según las categorías de tus productos
+      // Añado más opciones según las categorías de los productos
     ]
 
     return {
